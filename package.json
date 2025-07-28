@@ -1,0 +1,15 @@
+{
+  "name": "programacao_aplicativos",
+  "version": "1.0.0",
+  "description": "Repositório onde serão armazenados os códigos das aulas de Programação de Aplicativos da turma de DS (Desenvolvimento de Sistemas) - 3° ano do SENAI Boqueirão",
+  "main": "teste.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
