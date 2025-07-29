@@ -1,7 +1,7 @@
 const prompt = require("prompt-sync")();
 
 let num1 = 120.00;
-let valor_final = 120-((15/100)*120)-10;
+let valor_final = 120-((15/100)*120)+10;
 console.log(`\n--> ${num1} - (15% + taxa de entrega (R$10)) = ${valor_final}\n`);
 
 
