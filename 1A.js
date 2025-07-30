@@ -1,6 +1,6 @@
 const prompt = require("prompt-sync")();
 
-let nome = prompt ("Digite o seu : ");
+let nome = prompt ("Digite o seu nome: ");
 
 let idade = prompt ("Digite sua idade: ");
 
