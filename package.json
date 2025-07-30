@@ -11,5 +11,14 @@
   "license": "ISC",
   "dependencies": {
     "prompt-sync": "^4.2.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/A-bacate/Programacao_Aplicativos.git"
+  },
+  "bugs": {
+    "url": "https://github.com/A-bacate/Programacao_Aplicativos/issues"
+  },
+  "homepage": "https://github.com/A-bacate/Programacao_Aplicativos#readme"
 }
