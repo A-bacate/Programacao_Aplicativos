@@ -21,7 +21,7 @@ console.log(`\nTotal de experiência: ${total}`);
 
 b) Faça um algoritmo que apresente na tela as tabuadas de 2 a 9.
 
-for (let i=0;i<=10;i++) {
+for (let i=2;i<=9;i++) {
     console.log(`\nTabuada do ${i}: `);
     for (let j=0;j<=10;j++) {
         console.log(`${i} * ${j} = ${i*j}`);
@@ -56,6 +56,28 @@ d) Criar um algoritmo para ler o nome e a idade de um grupo de pessoas, sendo o 
 grupo determinado pelo usuário. Ao final, o programa deverá imprimir o nome e a idade da pessoa mais
 idosa e o nome e a idade da pessoa mais jovem.
 
+let n = Number(prompt(`\n\t--> Quantidade de pessoas: `));
+let maior, menor, c, d;
+let idade = [], nome = [];
 
+for (let i=1;i<=n;i++) {
+    console.log(`\n\t--> Pessoa ${i}:`);
+    nome[i] = prompt(`\t--> Nome: `);
+    idade[i] = Number(prompt(`\t--> Idade: `));
+}
+menor = idade[0];
+maior = idade[0];
+for (let j=0;j<5;j++){
+    if (maior <= idade[j]){
+        maior = idade[j];
+        c = j;
+    }
+    if (menor >= idade[j]){
+        menor = idade[j];
+        d = j;
+    }
+}
+console.log(`\n\n\t--> Pessoa mais idosa:\n\t\t--> ${nome[c]}\n\t\t--> ${maior} anos`);
+console.log(`\n\n\t--> Pessoa mais jovem:\n\t\t--> ${nome[d]}\n\t\t--> ${menor} anos`);
 
 */
