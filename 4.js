@@ -8,6 +8,7 @@ const prompt = require("prompt-sync")();
 .indexOf()
 .sort()
 .reverse()
+math.random(x,y)
 
 */
 
