@@ -90,16 +90,18 @@ encerramento, deve-se imprimir o maior, o menor e a média aritmética dos núme
 não faz parte da sequência.
 
 */
-let n = [], k = 0, continuar = true;
-let maior, menor, soma;
+let n = [], k=0, continuar = true;
+let maior, menor, soma=0, media=0;
+
 console.log(`\n\tDigite números (0 para encerrar):`);
 while(continuar) {
     n[k]= Number(prompt(`\n\t--> `));
     if (n[k]==0) {
-        continuar == false;
+        continuar = false;
+        break;
     }
-    ++k;
-    soma += n[k]
+    k++;
+    Number(soma += n[k]);
 }
 menor = n[0];
 maior = n[0];
@@ -111,7 +113,10 @@ for (let j=0;j<k;j++){
         menor = n[j];
     }
 }
+media = soma/k;
 console.log(`\n\t--> Maior número: ${maior}`);
-console.log(`\n\t--> Menor número: ${maior}`);
-console.log(`\n\t--> Média: ${soma/k}`);
+console.log(`\n\t--> Menor número: ${menor}`);
+console.log(`\n\t--> Média: ${media}`);
+
+//  :(
 
