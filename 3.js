@@ -88,7 +88,6 @@ console.log(`\n\n\t--> Pessoa mais jovem:\n\t\t--> ${nome[d]}\n\t\t--> ${menor} 
 e) Crie um algoritmo que leia vários números e encerre a leitura com 0 (zero). Após o
 encerramento, deve-se imprimir o maior, o menor e a média aritmética dos números. O número 0 (zero)
 não faz parte da sequência.
-*/
 
 let n = [], k=0, continuar = true;
 let maior, menor, soma=0, media=0;
@@ -97,17 +96,12 @@ console.log(`\n\tDigite números (0 para encerrar):`);
 while(continuar) {
     n[k]= Number(prompt(`\n\t--> `));
     console.log(n[k]);
-
     if (n[k]==0) {
         continuar = false;
         break;
     }
-
-   
-    // console.log(soma);
     console.log(n[k]);
     Number(soma += n[k]);
-    // console.log(soma);
     k++;
 }
 menor = n[0];
@@ -125,6 +119,44 @@ console.log(`\n\t--> Maior número: ${maior}`);
 console.log(`\n\t--> Menor número: ${menor}`);
 console.log(`\n\t--> Média: ${media}`);
 
+*/
 
-//  :(
 
+
+/*
+f) Romário tem 1,50m e cresce 2 centímetros por ano, enquanto Bebeto tem 1,10 e cresce 3
+centímetros por ano. Construa um algoritmo que calcule em quantos anos Bebeto será maior que
+Romário.
+
+
+let romario, bebeto;
+let i=0;
+romario = 1.50;
+bebeto = 1.10;
+while (bebeto < romario){
+    romario += 0.02;
+    bebeto += 0.03;
+    ++i;
+}
+console.log(`Bebeto será maior que Romário em ${i} anos!`);
+
+*/
+
+
+
+/*
+g) Crie um algoritmo que apresente a série Fibonacci até o 15 termo. A série de Fibonacci é
+formada pela sequência: 1, 1, 2, 3, 5, 8, 13, 21, 34... etc. Esta série se caracteriza pela soma de um
+termo posterior com seu subsequente.
+
+fn = fn-1 + fn-2 if n>1
+*/
+let f = [];
+for (let n=1;n<=15;n++){
+    if (n=1) {
+        f[n] = n;
+    } else {
+        f[n] = f[n-1] + f[n-2]
+    }
+}
+console.log(f);

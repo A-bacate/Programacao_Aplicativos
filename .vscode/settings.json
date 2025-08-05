@@ -1,4 +1,8 @@
 {
-    "powermode.presets": "fireworks",
-    "powermode.enabled": true
+    "powermode.presets": "flames",
+    "powermode.enabled": true,
+    "powermode.combo.threshold": 0,
+    "powermode.combo.timerEnabled": "hide",
+    "powermode.shake.enabled": true,
+    "powermode.shake.intensity": 2
 }

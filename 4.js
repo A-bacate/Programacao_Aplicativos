@@ -5,6 +5,10 @@ const prompt = require("prompt-sync")();
 .unshift()
 .shift()
 .length
+.indexOf()
+.sort()
+.reverse()
+
 */
 
 /*
@@ -20,5 +24,7 @@ jogos.push(prompt(`Adicione um jogo ao array: `));
 jogos[1] = "Minecraft";
 jogos.pop();
 console.log(jogos);
-console.log(jogos.length);
+console.log(`Tamanho do Array: ${jogos.length}`);
+
+
 
