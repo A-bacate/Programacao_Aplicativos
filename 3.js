@@ -142,21 +142,3 @@ console.log(`Bebeto será maior que Romário em ${i} anos!`);
 
 */
 
-
-
-/*
-g) Crie um algoritmo que apresente a série Fibonacci até o 15 termo. A série de Fibonacci é
-formada pela sequência: 1, 1, 2, 3, 5, 8, 13, 21, 34... etc. Esta série se caracteriza pela soma de um
-termo posterior com seu subsequente.
-
-fn = fn-1 + fn-2 if n>1
-*/
-let f = [];
-for (let n=1;n<=15;n++){
-    if (n=1) {
-        f[n] = n;
-    } else {
-        f[n] = f[n-1] + f[n-2]
-    }
-}
-console.log(f);
