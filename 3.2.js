@@ -7,19 +7,30 @@ termo posterior com seu subsequente.
 
 fn = fn-1 + fn-2 if n>1
 */
-let atual = [];
-let ultimo=0, penultimo=0;
+let fibo = [];
+let ultimo=0;
 
-for (let n=1;n<=15;n++){
-    if (n==1 || n==2) {
-        atual.push(1);
+for (let n=0;n<15;n++){
+    if (n==1 || n == 0) {
+
+        fibo.push(1);
+        ultimo = 0;
+
     } else {
-        ultimo = atual[n-1];
-        penultimo = atual[n-2];
-        atual.push(ultimo+penultimo);
+
+        fibo.push(fibo[n] + ultimo);
+        ultimo = fibo[n] - ultimo;
+
+        /*
+            fibo = fibo + ultimo
+            (fibo = 1 + 0)
+            ultimo = fibo - ultimo
+            (ultimo = 1 - 0)
+        */
+
     }
 }
-console.log(atual);
+console.log(fibo);
 
 
 
