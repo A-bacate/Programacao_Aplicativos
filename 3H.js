@@ -5,5 +5,8 @@ const prompt = require("prompt-sync")();
 // final, o percentual de pessoas com saldo negativo deve ser informado. O algoritmo acaba quando se
 // digita o número da conta igual a 0 (zero).
 
-let conta;
-// while (conta !=0)
+let fim = false;
+let conta = [];
+while (!fim) {
+    
+}
